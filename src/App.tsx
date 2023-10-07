@@ -1,5 +1,7 @@
 import './App.css'
-import UsingProvider from './compontents/UsingProvider'
+import AuthCustomer from './compontents/AuthApp/AuthCustomer'
+import AuthProvider from './compontents/AuthApp/AuthProvider'
+import OtherCustomer from './compontents/AuthApp/OtherCustomer'
 import UsingUseContext from './compontents/UsingUseContext'
 import ThemeProvider from './providers/ThemeProvider'
 
@@ -7,10 +9,14 @@ function App() {
 
   return (
     <>
-      {/* <UsingProvider /> */}
-    <ThemeProvider>
+    {/* <ThemeProvider>
         <UsingUseContext />
-    </ThemeProvider>
+    </ThemeProvider> */}
+    <AuthProvider>
+      <AuthCustomer/>
+      <hr/>
+      <OtherCustomer/>
+    </AuthProvider>
     </>
   )
 }
